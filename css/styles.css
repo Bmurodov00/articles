@@ -1,0 +1,231 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  color: #222;
+  font-family: "Bebas Neue", "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.global-wrapper {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* SITE-HERO */
+.site-hero {
+  background-image: url("../img/background-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 24px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.site-hero-content {
+  max-width: 285px;
+}
+.site-hero-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.site-hero-button {
+  padding: 12px 24px;
+  background: #1e90ff;
+  border: 0;
+  cursor: pointer;
+}
+.button {
+  transition: background-color 0.4s ease;
+}
+.button:hover {
+  background-color: rgba(30, 144, 255, 0.80);
+}
+.button:active {
+  background: rgba(30, 144, 255, 0.60);
+}
+.site-hero-button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-hero-button-icon {
+  display: inline-block;
+  background-image: url("../img/star-icon.png");
+  background-size: contain;
+  margin-right: 12px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.site-hero-button-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* SITE-CONTENT */
+.site-content {
+  padding-top: 54px;
+  padding-right: 54px;
+  padding-left: 54px;
+  background-color: #fff;
+}
+.main-title {
+  color: #222;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #999;
+}
+
+/* LIST */
+.main-content-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.main-content-item {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-content-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.main-content-item-info {
+  display: flex;
+  flex-direction: column;
+  width: 323px;
+  padding: 16px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.main-content-item-link {
+  width: 307px;
+  color: #222;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 4px;
+  transition: color 0.4s ease;
+}
+.main-content-item-link:hover {
+  color: #1e90ff;
+}
+.main-content-item-link:active {
+  color: rgba(30, 144, 255, 0.6)
+}
+.time-and-view-wrapper {
+  display: flex;
+  width: 307;
+}
+.time-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 4px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.clock {
+  background-image: url("../img/icon-clock.png");
+  display: inline-block;
+}
+.main-content-item-text {
+  font-family: "Roboto Condensed", "Bebas Neue", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+}
+.time {
+  color: #888;
+  margin-right: 24px;
+}
+.visibility {
+  display: inline-block;
+  background-image: url("../img/visibility-black.png")
+}
+.view {
+  color: #666;
+}
+/* MORE-BUTTON */
+.more {
+  color: #fff;
+  font-family: "Roboto Condensed", "Bebas Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 4px;
+  background: #1e90ff;
+  border: 0;
+  margin-top: 23px;
+  cursor: pointer;
+}
+
+
+/* retina screen styles */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-header-button-icon {
+    background-image: url("../img/star-icon@2x.png");
+  }
+  .site-header {
+    background-image: url("../img/background-img@2x.png");
+  }
+  .clock {
+    background-image: url("../img/icon-clock@2x.png");
+  }
+  .visibility {
+    background-image: url("../img/visibility-black@2x.png")
+  }
+
+}
